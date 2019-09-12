@@ -1,0 +1,30 @@
+h1 {
+  color: red;
+}
+
+.bookcover {
+  height: 300px;
+  width: auto;
+}
+
+.myNav {
+  background-image: linear-gradient(90deg, #6284FF 0%, #FFFFFF 32%, #FFFFFF 70%, #FF0000 100%);
+}
+
+.logoImage {
+  max-height: fit-content;
+}
+
+/* Searchbar animation */
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+}
+
+/* End Searchbar */

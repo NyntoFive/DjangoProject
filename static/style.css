@@ -1,0 +1,176 @@
+main {
+    height: 100vh;
+    background: darkgrey;
+}
+.myNav {
+    background-image: linear-gradient(90deg, #6284FF 0%, #FFFFFF 32%, #ffffff 70%, #FF0000 100%);
+    
+}
+.logoImage {
+    max-height: fit-content;
+    border: 1px dotted yellow;
+}
+#playerPage {
+    background: url("https://nyn-src.s3.us-east-2.amazonaws.com/img/doom-bg.jpg");
+}
+#logo {
+    justify-content: center;
+}
+
+.myDeck {
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 1fr) 1fr; 
+    background-image: linear-gradient(90deg, rgb(0, 55, 255) 0%, #FFFFFF 32%, #ffffff 70%, #FF0000 100%);
+}
+
+.itemCard {
+    grid-auto-flow:row;
+    place-items: center;
+    place-self: center;
+    width: 250px;
+    border: black solid 1px;
+
+
+}
+.card-img{
+    max-width: 250px;
+}
+.card-title {
+    color: orange;
+
+}
+.myCardText {
+    font: Roboto;
+    color: purple;
+}
+
+/* complex grid example */
+.aboutWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+    border: 2px solid black;
+}
+.aboutWrapper>div {
+    border: 2px dotted yellow;
+}
+
+.aboutWrapper div:nth-child(2) {
+    grid-column: 3;
+    grid-row: 2 / 4;
+        border: 2px dotted green;
+
+}
+
+.aboutWrapper div:nth-child(5) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    border: 2px dotted red;
+
+}
+
+.aboutWrapper2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    border: 2px solid blue;
+}
+
+.aboutWrapper2>div {
+    border: 2px dotted yellow;
+}
+.aboutWrapper2 div:nth-child(4n+1) {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+    background-color: #ffa94d;
+}
+
+.aboutWrapper2 div:nth-child(2) {
+    grid-column: 3;
+    grid-row: 2 / 4;
+}
+
+.aboutWrapper2 div:nth-child(5) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.imageGalleryWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    list-style: none;
+    margin: 1em auto;
+    padding: 0;
+    max-width: 80%;
+}
+
+.imageGalleryWrapper li {
+    border: 1px solid #ccc;
+}
+
+.imageGalleryWrapper li.landscape {
+    grid-column-end: span 2;
+}
+
+.imageGalleryWrapper li img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    background: url("https://firebasestorage.googleapis.com/v0/b/fir-193f5.appspot.com/o/doom%2Fdoom-bg.jpg?alt=media&token=ef75eaf0-382f-49f5-9577-90be82f96de0");
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.bookcover {
+    height: 300px;
+    width: auto;
+}
+
+#player {
+    border: 3px solid goldenrod;
+}
+        
+.threes {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+.card-img-top {
+    background-color: black;
+}
+.card {
+    background-color: black;
+}
+
+h4 {
+    color: orange;
+    text-align: center;
+}
+        
+.content-left {
+    margin: 10px;
+}
+.content-mid{
+    color:blue;
+    margin: 10px;
+}
+.content-right {
+    color: purple;
+    margin: 10px;    
+}
+
